@@ -1,0 +1,110 @@
+@import url(https://fonts.bunny.net/css);
+
+.material-symbols-outlined {
+	color: var(--text);
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24
+}
+
+:root {
+	--base: #232136;
+	--rose: #ebbcba;
+	--highlight: #56526e;
+	--overlay: #393552;
+	--gold: #f6c177;
+	--text: #e0def4;
+}
+
+* {
+	list-style: none;
+	font-family: Montserrat;
+ }
+
+body {
+	display: grid;
+	grid-area: repeat(10,10%) / repeat(10,10%);
+	margin: 0;
+}
+
+.container {
+	line-height: 3;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: var(--base);
+}
+
+.sidebar {
+	height: 100vh;
+	width: 15vw;
+	background-color: var(--highlight);
+	.main-button {
+		display: flex;
+		.thingy {
+			margin: 2%;
+			width: 2em;
+			height: 2em;
+			border-radius: 8px;
+			background-color: var(--gold);
+			display: grid;
+		}
+}
+
+	button {
+		font-weight: bolder;
+		color: var(--rose);
+		background-color: var(--highlight);
+		border-style: none;
+		font-size: 20px;
+	}
+}
+
+.header {
+	height: 15vh;
+	width: 100vw;
+	background-color: var(--overlay);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.5%;
+	color: var(--text);
+}
+
+.top-header {
+		display: flex;
+	.searchbar {
+		display: flex;
+		align-items: center;
+		input {
+			width: 50vw;
+			height: 2em;
+			border-style: solid;
+			border-color: var(--text);
+			border-radius: 25px;
+			background-color: var(--highlight);
+		}
+	}
+	.user-display {
+		display: flex;
+		align-items: center;
+		img {
+			height: 4em;
+			width: 4em;
+			border-radius: 50%;
+		}
+	}
+}
+
+.bottom-header {
+	display: flex;
+	align-items: center;
+	img {
+		width: 8em;
+		height: 8em;
+		border-radius: 50%;
+	}
+}
