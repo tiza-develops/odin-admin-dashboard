@@ -5,63 +5,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Admin dashboard</title>
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-	<div class="container">
-		<div class="sidebar">
-			<div class="main-button">
-				<div class="thingy"></div>
-				<button>Dashboard</button>
-			</div>
-			<div>
-				<ul>
-					<li><button>Home</button></li>
-					<li><button>Profile</button></li>
-					<li><button>Messages</button></li>
-					<li><button>History</button></li>
-					<li><button>Tasks</button></li>
-					<li><button>Communities</button></li>
-				</ul>
-			</div>
-			<div>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<div class="main-button">
+					<button>Dashboard</button>
+				</div>
+				<div class="task-button">
+					<ul>
+						<li><button>Home</button></li>
+						<li><button>Profile</button></li>
+						<li><button>Messages</button></li>
+						<li><button>History</button></li>
+						<li><button>Tasks</button></li>
+						<li><button>Communities</button></li>
+					</ul>
+				</div>
+				<div>
 				<ul>
 					<li><button>Settings</button></li>
 					<li><button>Support</button></li>
 					<li><button>Privacy</button></li>
-				</ul>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="header">
-				<div class="top-header">
-					<div class="searchbar">
-						<span class="material-symbols-outlined">
-							search
-						</span>
-						<input type="text">
-					</div>
-					<div class="user-display">
-						<span class="material-symbols-outlined">
-							notifications_active
-						</span>
-						<img src="./assets/pfp.jpeg" alt="">
-						<p>Ryo Yamada</p>
-					</div>
-			</div>
-				<div class="bottom-header">
+			<div class="header">
+				<div class="header-top">
+				 <p>🔍</p>
+					<input type="text">
 					<img src="./assets/pfp.jpeg" alt="">
-					<div class="names">
+					<p>Morgan Oakley</p>
+				</div>
+				<div class="header-bottom">
+					<img src="./assets/pfp.jpeg" alt="">
+					<div class="user-name">
 						<p>Hi there</p>
-						<p>Ryo Yamada (@itsrealryo)</p>
+						<p>Ryo</p>
 					</div>
-					<div>
-						<button>Share</button>
-						<button>New</button>
-						<button>Upload</button>
+					<button>New</button>
+					<button>Upload</button>
+					<button>Share</button>
+				</div>
+			</div>
+			<div class="content">
+				<div class="projects">
+					<p>Your Projects</p>
+					<div class="project1"></div>
+					<div class="project2"></div>
+					<div class="project3"></div>
+					<div class="project4"></div>
+					<div class="project5"></div>
+					<div class="project6"></div>
+				</div>
+				<div class="social">
+					<div class="announcements">
+						<p>Announcements</p>
+						<div></div>
 					</div>
+					<div class="trending"></div>
+				</div>
 			</div>
 		</div>
-		</div>
-	</div>
-</body>
+	</body>
 </html>
