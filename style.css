@@ -121,5 +121,23 @@
 
 .social {
 	display: grid;
-	grid-template-row: min-content 1fr min-content 1fr;
+	grid-template-rows: min-content 1fr min-content 1fr;
+	p.announcements { 
+		grid-row-start: 1;
+	}
+	p.trending { 
+		grid-row-start: 3;
+	}
+}
+
+div.announcements {
+	grid-row-start: 2;
+	margin: 2em;
+	background-color: var(--gold);
+}
+
+div.trending {
+	grid-row-start: 4;
+	margin: 2em;
+	background-color: var(--gold);
 }
